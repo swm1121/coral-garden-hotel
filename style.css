@@ -202,6 +202,9 @@ button { font-family: inherit; cursor: pointer; border: none; background: none; 
 .footer-grid { max-width: var(--max); margin: 0 auto; display: grid; grid-template-columns: 2fr 1fr 1fr 1fr; gap: 52px; }
 .footer-logo { font-family: var(--serif); font-weight: 500; font-size: 1rem; letter-spacing: 0.1em; text-transform: uppercase; color: var(--white); display: block; margin-bottom: 14px; }
 .footer-tag { font-size: 0.81rem; font-weight: 300; color: rgba(250,249,247,0.4); line-height: 1.7; max-width: 230px; }
+.footer-chamber { display: inline-block; margin-top: 20px; opacity: 0.55; transition: opacity 0.2s; }
+.footer-chamber:hover { opacity: 0.85; }
+.footer-chamber img { height: 44px; width: auto; display: block; }
 .footer-col-hd { font-size: 0.63rem; letter-spacing: 0.2em; text-transform: uppercase; color: rgba(250,249,247,0.3); margin-bottom: 16px; }
 .footer-list { list-style: none; display: flex; flex-direction: column; gap: 10px; }
 .footer-list li a,
