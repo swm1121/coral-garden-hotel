@@ -43,4 +43,6 @@ const obs = new IntersectionObserver((entries) => {
 document.addEventListener('DOMContentLoaded', () => {
   updateNav();
   document.querySelectorAll('.fi').forEach(el => obs.observe(el));
+  const yr = document.getElementById('copy-year');
+  if (yr) yr.textContent = new Date().getFullYear();
 });
