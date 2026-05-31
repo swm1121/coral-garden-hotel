@@ -219,7 +219,7 @@ button { font-family: inherit; cursor: pointer; border: none; background: none; 
 .hero { position: relative; height: 100vh; min-height: 600px; display: flex; align-items: flex-end; overflow: hidden; }
 .hero-bg {
   position: absolute; inset: 0;
-  background-image: url('https://static.wixstatic.com/media/27be38_09f3816706b747b8a890a3bf2c1b6a8f~mv2_d_4032_3024_s_4_2.jpeg');
+  background-image: url('images/hero-hotel.jpg');
   background-size: cover; background-position: center 55%;
   transform: scale(1); transition: transform 8s ease-out;
 }
