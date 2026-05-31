@@ -330,7 +330,7 @@ button { font-family: inherit; cursor: pointer; border: none; background: none; 
   position: absolute; inset: 0;
   background-image: url('images/rota-coastline.jpeg');
   background-size: cover; background-position: center;
-  filter: brightness(0.58);
+  filter: brightness(0.78);
 }
 .rota-teaser-content { position: relative; z-index: 2; padding: 0 36px; max-width: calc(var(--max) + 72px); margin: 0 auto; width: 100%; }
 .rota-teaser-content .label { color: rgba(250,249,247,0.55); margin-bottom: 14px; }
