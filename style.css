@@ -73,7 +73,6 @@ button { font-family: inherit; cursor: pointer; border: none; background: none; 
   letter-spacing: 0.11em; text-transform: uppercase;
   color: rgba(250,249,247,0.8); transition: color 0.2s;
 }
-}
 .nav.scrolled .nav-links a { color: var(--stone); }
 .nav-links a:hover,
 .nav.scrolled .nav-links a:hover { color: var(--charcoal); }
