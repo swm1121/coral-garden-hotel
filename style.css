@@ -267,11 +267,11 @@ button { font-family: inherit; cursor: pointer; border: none; background: none; 
 
 /* ── Rooms preview ── */
 .rooms-preview { padding: 88px 36px; background: var(--white); }
-.sec-head { margin-bottom: 52px; }
+.rooms-preview-inner { max-width: var(--max); margin: 0 auto; display: grid; grid-template-columns: 1fr 2fr; gap: 72px; align-items: start; }
 .sec-head .label { margin-bottom: 14px; }
 .sec-head .heading { font-size: clamp(1.7rem,3vw,2.5rem); margin-bottom: 12px; }
 .sec-head .body-text { max-width: 480px; }
-.rooms-grid { max-width: var(--max); margin: 0 auto; display: grid; grid-template-columns: repeat(3,1fr); gap: 3px; }
+.rooms-grid { display: grid; grid-template-columns: repeat(2,1fr); gap: 3px; }
 .room-card { cursor: pointer; }
 .room-card-img { overflow: hidden; aspect-ratio: 3/4; }
 .room-card-img img { width: 100%; height: 100%; object-fit: cover; transition: transform 0.7s var(--ease); filter: brightness(0.92); }
@@ -451,6 +451,7 @@ button { font-family: inherit; cursor: pointer; border: none; background: none; 
 @media (max-width: 1024px) {
   .feature-inner { gap: 48px; }
   .facts-grid { grid-template-columns: repeat(2,1fr); }
+  .rooms-preview-inner { grid-template-columns: 1fr; gap: 40px; }
   .rooms-grid { grid-template-columns: repeat(2,1fr); }
   .reasons-grid { grid-template-columns: repeat(2,1fr); }
   .footer-grid { grid-template-columns: 1fr 1fr; gap: 40px; }
@@ -476,6 +477,7 @@ button { font-family: inherit; cursor: pointer; border: none; background: none; 
   .feature-inner { grid-template-columns: 1fr; gap: 36px; }
   .feature-inner.rev { direction: ltr; }
   .rooms-preview { padding: 64px 20px; }
+  .rooms-preview-inner { grid-template-columns: 1fr; gap: 36px; }
   .rooms-grid { grid-template-columns: 1fr; gap: 36px; }
   .fit-section { padding: 64px 20px; }
   .fit-grid { grid-template-columns: 1fr; }
