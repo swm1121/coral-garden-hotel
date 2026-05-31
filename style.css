@@ -328,7 +328,7 @@ button { font-family: inherit; cursor: pointer; border: none; background: none; 
 .rota-teaser { position: relative; height: 65vh; min-height: 460px; display: flex; align-items: center; overflow: hidden; }
 .rota-teaser-bg {
   position: absolute; inset: 0;
-  background-image: url('images/rota-coastline.jpeg');
+  background-image: url('images/latte-stones.jpg');
   background-size: cover; background-position: center;
   filter: brightness(0.78);
 }
