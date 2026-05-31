@@ -190,10 +190,20 @@ button { font-family: inherit; cursor: pointer; border: none; background: none; 
 .photo-slot img { width: 100%; height: 100%; object-fit: cover; transition: transform 0.8s var(--ease); }
 .photo-slot:hover img { transform: scale(1.03); }
 
-/* Interior page header */
-.page-hdr { padding: 148px 36px 72px; background: var(--cream); border-bottom: 1px solid var(--border); }
-.page-hdr .heading { font-size: clamp(2rem,4.5vw,3.4rem); margin: 10px 0 14px; }
-.page-hdr .body-text { max-width: 520px; }
+/* Interior page hero */
+.page-hero { position: relative; height: 45vh; min-height: 320px; display: flex; align-items: flex-end; overflow: hidden; }
+.page-hero-bg { position: absolute; inset: 0; background-size: cover; background-position: center; filter: brightness(0.78); }
+.page-hero-overlay { position: absolute; inset: 0; background: linear-gradient(to bottom, rgba(14,17,17,0.1), rgba(14,17,17,0.65)); }
+.page-hero-content { position: relative; z-index: 2; padding: 0 36px 48px; max-width: calc(var(--max) + 72px); margin: 0 auto; width: 100%; }
+.page-hero-content .label { color: rgba(250,249,247,0.6); margin-bottom: 10px; }
+.page-hero-content .heading { color: var(--white); font-size: clamp(2rem,4.5vw,3.4rem); }
+
+/* Dark CTA section */
+.cta-dark { padding: 88px 36px; background: var(--charcoal); text-align: center; }
+.cta-dark .label { color: var(--sand); margin-bottom: 14px; }
+.cta-dark .heading { color: var(--white); font-size: clamp(1.7rem,3vw,2.5rem); margin-bottom: 28px; }
+.cta-dark .contact-btn { border-color: rgba(250,249,247,0.2); color: rgba(250,249,247,0.8); }
+.cta-dark .contact-btn:hover { border-color: var(--white); color: var(--white); }
 
 /* ============================================================
    FOOTER
@@ -408,7 +418,7 @@ button { font-family: inherit; cursor: pointer; border: none; background: none; 
 /* ============================================================
    ABOUT PAGE
 ============================================================ */
-.about-body { padding: 148px 36px 88px; background: var(--white); }
+.about-body { padding: 72px 36px 88px; background: var(--white); }
 .about-inner { max-width: var(--max); margin: 0 auto; }
 .about-open { display: grid; grid-template-columns: 1fr 1fr; gap: 72px; align-items: start; margin-bottom: 88px; padding-bottom: 88px; border-bottom: 1px solid var(--border); }
 .about-open .label { margin-bottom: 14px; }
@@ -427,7 +437,7 @@ button { font-family: inherit; cursor: pointer; border: none; background: none; 
 /* ============================================================
    CONTACT PAGE
 ============================================================ */
-.contact-body { padding: 148px 36px 88px; background: var(--white); }
+.contact-body { padding: 72px 36px 88px; background: var(--white); }
 .contact-inner { max-width: var(--max); margin: 0 auto; display: grid; grid-template-columns: 1fr 1fr; gap: 88px; }
 .contact-lhs .label { margin-bottom: 14px; }
 .contact-lhs .heading { font-size: clamp(1.9rem,3.5vw,2.8rem); margin-bottom: 28px; }
@@ -492,7 +502,8 @@ button { font-family: inherit; cursor: pointer; border: none; background: none; 
   .rota-teaser-content { padding: 0 20px; }
   .book-direct { padding: 72px 20px; }
   .book-btns { flex-direction: column; align-items: center; }
-  .page-hdr { padding: 110px 20px 56px; }
+  .page-hero { height: 35vh; }
+  .page-hero-content { padding: 0 20px 32px; }
   .rooms-list { padding: 56px 20px; }
   .room-row { grid-template-columns: 1fr; gap: 28px; padding: 56px 0; }
   .room-row.alt { direction: ltr; }
@@ -501,13 +512,13 @@ button { font-family: inherit; cursor: pointer; border: none; background: none; 
   .rota-intro { grid-template-columns: 1fr; }
   .act-grid, .get-grid { grid-template-columns: 1fr; }
   .honest-note { padding: 24px 20px; }
-  .about-body { padding: 110px 20px 64px; }
+  .about-body { padding: 52px 20px 64px; }
   .about-open { grid-template-columns: 1fr; gap: 40px; margin-bottom: 64px; padding-bottom: 64px; }
   .about-photo-row { grid-template-columns: 1fr 1fr; }
   .about-photo:last-child { display: none; }
   .about-what { margin-bottom: 64px; padding-bottom: 64px; }
   .about-pillars { grid-template-columns: 1fr; gap: 28px; }
-  .contact-body { padding: 110px 20px 64px; }
+  .contact-body { padding: 52px 20px 64px; }
   .contact-inner { grid-template-columns: 1fr; gap: 52px; }
   .footer { padding: 52px 20px 32px; }
   .footer-grid { grid-template-columns: 1fr; gap: 36px; }
